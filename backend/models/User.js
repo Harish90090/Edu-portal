@@ -54,7 +54,7 @@ const userSchema = new mongoose.Schema({
     }
 });
 
-userSchema.index({unique:true});
+userSchema.index({ unique: true });
 
 
 module.exports = mongoose.model('User', userSchema);
