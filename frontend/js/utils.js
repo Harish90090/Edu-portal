@@ -1,5 +1,5 @@
 const Utils = {
-    API_BASE_URL: 'http://localhost:5000/api',
+    API_BASE_URL: 'https://edu-portal-2.onrender.com/api',
 
     showElement: (element) => {
         if (element) element.classList.remove('hidden');
