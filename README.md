@@ -18,10 +18,10 @@ The Edu-Portal is built using the industry-standard MERN stack.
 
 | Category | Technology | Description |
 | :---- | :---- | :---- |
-| **Frontend** | **React** (with Hooks) | Building the dynamic and responsive user interface. |
+| **Frontend** | **Html,css,js**| Building the dynamic and responsive user interface. |
 | **Backend** | **Node.js** & **Express.js** | Creating a fast, scalable, and non-blocking API server. |
 | **Database** | **MongoDB** & **Mongoose** | Flexible NoSQL database with object data modeling (ODM). |
-| **Styling** | **Tailwind CSS** or Custom CSS | Used for utility-first, responsive design and styling. |
+| **Styling** | *** CSS3** or Custom CSS | Used for utility-first, responsive design and styling. |
 | **State Management** | **Context API** / **Redux** (or similar) | Efficient global state management in the React application. |
 
 ## **🚀 Local Setup & Installation**
