@@ -5,12 +5,11 @@ const http = require('http');
 const socketIo = require('socket.io');
 const path = require('path');
 
-// Import routes
 const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const chatRoutes = require('./routes/chatRoutes');
 
-// Import models
+
 const User = require('./models/User');
 const Message = require('./models/Message');
 const ChatSession = require('./models/ChatSession');
@@ -200,23 +199,10 @@ io.on('connection', (socket) => {
 });
 
 
-// ----------------------------------------
-// 👇 STATIC FILE SERVING CONFIGURATION 👇
-// ----------------------------------------
 
-// Assuming your structure is:
-// - Edu-portal/
-//   - backend/ (where this server.js file is)
-//   - frontend/ (where index.html is)
-
-// 1. Serve static assets from the 'frontend' directory.
-// path.join(__dirname, '..', 'frontend') goes up one level ('..') from the backend folder 
-// to the root, then into the 'frontend' folder.
 app.use(express.static(path.join(__dirname, '..', 'frontend')));
 
-// 2. Catch all GET requests that haven't been handled by your API routes (/api/*)
-// and send the index.html file. This is crucial for single-page applications (SPAs) 
-// and resolves the "Cannot GET /" error.
+
 app.get('*', (req, res) => {
 res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
 });
